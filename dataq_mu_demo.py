@@ -82,8 +82,10 @@ if __name__ == "__main__":
         pass
         time.sleep(.001)
     pass
-    serDataq.write(b"\r")
-    time.sleep(.1)
 
     serDataq.close()
-    quit()
+    time.sleep(.1)
+    if os.name == 'nt':
+        os._exit(0)
+    else:
+        os._exit(os.EX_OK)
