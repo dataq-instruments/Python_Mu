@@ -9,7 +9,6 @@ import threading
 
 #Windows
 CONST_SER_PORT = 'COM5'   #for Windows get
-5
 
 #Linux
 #CONST_SER_PORT = '/dev/ttyACM0'   #for Linux
